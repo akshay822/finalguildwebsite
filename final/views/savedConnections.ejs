@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>WoW Classic Guild</title>
+
+    <link rel="stylesheet" type="text/css" href="/assets/stylesheets/a1.css">
+    <link rel="icon" type="image/png" href="/assets/images/wowicon2.ico">
+
+    <script type="text/javascript" src="/models/userConnection.js"></script>
+  </head>
+  <body onload="loadTable(<%= sessionuid %>, <%= JSON.stringify(allUserConnections) %>, <%= JSON.stringify(allConnections) %>)">
+
+    <% include partials/header.ejs %>
+
+    <% if(sessionuid){ %>
+      <% include partials/loggednav.ejs %>
+    <% } else{ %>
+      <% include partials/nav.ejs %>
+    <% } %>
+
+
+    <main>
+      <section>
+        <div id="savedConnections">
+          <h3><%= username %>'s Connections</h3>
+          <table id="connectionstable" style="width:100%">
+            <tr>
+              <th>Connection</th>
+              <th>Category</th>
+              <th>Going?</th>
+              <th></th>
+            </tr>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <% include partials/footer.ejs %>
+
+  </body>
+</html>

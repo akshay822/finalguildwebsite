@@ -1,0 +1,20 @@
+<nav>
+  <form action="/savedConnections" method="post">
+    <ul>
+      <li><a href="/newConnection" target="_self">Start a new connection</a></li>
+      <li>Logged in as <%= username %></li>
+      <li><button type="submit" name="signOut" value="signOut" id="looklink">Sign Out</button></li>
+    </ul>
+  </form>
+</nav>
+
+<nav id=navigation>
+  <form action="/savedConnections" method="post">
+    <input type="hidden" name="username" value="<%= username %>">
+    <ul>
+      <li><a href="/" target="_self">Home</a></li>
+      <li><a href="/connections" target="_self">Connections</a></li>
+      <li><button type="submit" name="list" value="listitems" id="looklink">My Connections</button></li>
+    </ul>
+  </form>
+</nav>

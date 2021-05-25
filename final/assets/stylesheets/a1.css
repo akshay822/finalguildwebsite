@@ -1,0 +1,205 @@
+body{
+  background-color: #260C3F;
+}
+h1{
+  color: #00ff00;
+  height: 60px;
+  font-family: cursive;
+  font-style: italic;
+}
+nav{
+  color: blue;
+  text-align: right;
+  border-bottom: solid white
+}
+#navigation{
+  text-align: left;
+}
+li{
+  color: white;
+  font-size: 135%;
+  text-align: right;
+  display: inline;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+main{
+  display: inline-block;
+  background-color: gray;
+  color: black;
+  height:440px;
+  width:1520px;
+  text-align:center;
+}
+a{
+  color: white;
+}
+/* a:visited{
+  color: pink;
+} */
+p{
+  font-size: 200%;
+}
+footer{
+  border-top: solid white;
+}
+#userid{
+  float: right;
+}
+#connectioninfo ul li{
+  display:table;
+  color: black;
+  margin-bottom: 25px;
+}
+#connectiondetails ul li{
+  list-style-type:none;
+  color:black;
+  display:flex;
+  justify-content: flex-start;
+  margin-top: 15px;
+}
+#addbutton, #maybebutton, #nobutton{
+  background-color: #008CBA;
+  border-style: solid;
+  border-width: 10px;
+  border-color: gray;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+#goingbuttons{
+  position: absolute;
+  left: 1100px;
+  top:240px;
+  float:right;
+}
+table, th, td {
+  border: 1px solid black;
+}
+.updatebutton{
+  background-color: #008CBA;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+}
+.deletebutton{
+  background-color: #008CBA;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+}
+.updateform{
+  display: inline;
+  margin-left: -150px;
+}
+.deleteform{
+  display: inline;
+  margin-right: -120px;
+}
+#wowlogo{
+  width:175px;
+  height:75px;
+}
+#profilepic{
+  width:200px;
+  height:220px;
+  float:left;
+}
+#connectiontitle{
+  font-size: 32px;
+}
+
+#conndetails{
+  font-size: 25px;
+}
+
+#navigation ul{
+  overflow: auto;
+}
+
+#looklink{
+  text-align: left;
+  background: none!important;
+  border: none;
+  padding: 0!important;
+  color: white;
+  font-size: 96%;
+  /*optional*/
+  font-family: Times, sans-serif;
+  /*input has OS specific font-family*/
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#dynamic-list{
+  height: 435px;
+  overflow-y: scroll;
+}
+
+#savedConnections{
+  height: 435px;
+  overflow-y: scroll;
+}
+
+#userInvalid{
+  font-size: 100%;
+}
+
+/* div.monstertitle{
+  border: solid #0000ff;
+  color: #ffa500;
+  height: 75px;width: 200px;
+  margin: auto;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+} */
+/* a:link{
+  width:200px;
+  margin: auto;
+  display:flex;
+  justify-content: center;
+  color: #ff0000;
+} */
+/* a:visited{
+  color: purple;
+} */
+/* a:hover{
+  background-color: #0000ff;
+} */
+/* div.p1{
+  color: #ffffff;
+  font-weight: bold;
+  font-family: Times New Roman;
+}
+#imgdiv1{
+  display:flex;
+  justify-content: center;
+}
+#imgdiv2{
+  display:flex;
+  justify-content: center;
+}
+#imgdiv3{
+  display:flex;
+  justify-content: center;
+}
+div div.imgdescription{
+  color: #ffff00;
+  margin: auto;
+  font-family: Lucida Console;
+  display:flex;
+  justify-content: center;
+} */

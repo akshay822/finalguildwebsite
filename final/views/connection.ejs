@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>WoW Classic Guild</title>
+
+    <link rel="stylesheet" type="text/css" href="/assets/stylesheets/a1.css">
+    <link rel="icon" type="image/png" href="/assets/images/wowicon2.ico">
+
+    <script type=text/javascript src="/models/connection.js"></script>
+
+  </head>
+  <body onload="displayConnection(<%= JSON.stringify(theconnection) %>, <%= userid %>)">
+    <% include partials/header.ejs %>
+
+    <% if(logged === true){ %>
+      <% include partials/loggednav.ejs %>
+    <% } else{ %>
+      <% include partials/nav.ejs %>
+    <% } %>
+
+    <main>
+      <section>
+        <h2 id="connectiontitle"></h2>
+        <img src="./../assets/images/profilepic.png" id="profilepic" alt="logo"/>
+        <div id="connectioninfo">
+          <ul>
+            <li>
+              <ul>
+                <li id="connectionhost"></li>
+                <li id="connectionwhere"></li>
+                <li id="connectiondate"></li>
+                <li id="connectiontime"></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div id="goingbuttons">
+          <!-- <p>Going?</p>
+          <form action="/savedConnections" method="post">
+           <button type="submit" name="command" value="add" id="addbutton">Click to add to your connections!</button>
+          </form>
+
+          <form action="/savedConnections" method="post">
+           <button type="submit" name="command" value="maybe" id="maybebutton">Maybe</button>
+          </form>
+
+          <form action="/savedConnections" method="post">
+           <button type="submit" name="command" value="no" id="nobutton">Not Going</button>
+          </form> -->
+
+        </div>
+        <div id="connectiondetails">
+          <h3 id="conndetails">Details:</h3>
+          <ul>
+            <li id=innerconnectiondetails></li>
+          </ul>
+        </div>
+      </section>
+
+    </main>
+
+    <% include partials/footer.ejs %>
+
+
+  </body>
+</html>

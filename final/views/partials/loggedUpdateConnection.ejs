@@ -1,0 +1,31 @@
+<h2>
+  Update connection for <%= conn.title %>
+</h2>
+<form action="/savedConnections/updateConnection" method="post">
+
+  <label for="connectiontype">Type of event: </label>
+  <input type="text" id="connectiontype" name="connectiontype" value="<%= conn.type %>">
+
+  <label for="title">Title: </label>
+  <input type="text" name="title" value="<%= conn.title %>">
+
+  <label for="charname">Name: </label>
+  <input type="text" id="charname" name="charname" value="<%= conn.charname %>">
+
+  <label for="details">Details: </label>
+  <textarea id="details" name="details" style="height:200px"><%= conn.description %></textarea>
+
+  <label for="where">Where: </label>
+  <input type="text" id="where" name="where" value="<%= conn.where %>">
+
+  <label for="date">Date: </label>
+  <input type="text" id="date" name="date" value="<%= conn.when %>">
+
+  <label for="time">Time: </label>
+  <input type="text" id="time" name="time" value="<%= conn.time %>">
+
+  <input type="hidden" name="updateCID" value="<%= conn.cid %>">
+
+  <input type="submit" value="Update Connection">
+
+</form>

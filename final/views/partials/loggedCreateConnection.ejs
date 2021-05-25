@@ -1,0 +1,29 @@
+<h2>
+  Create your new connection using the fields below!
+</h2>
+<form action="/savedConnections/newConnection" method="post">
+
+  <label for="connectiontype">Type of event: </label>
+  <input type="text" id="connectiontype" name="connectiontype" placeholder="Raiding, PvP, Social Event, etc...">
+
+  <label for="title">Title: </label>
+  <input type="text" name="title" placeholder="Name of Event">
+
+  <label for="charname">Name: </label>
+  <input type="text" id="charname" name="charname" placeholder="Your toon's name">
+
+  <label for="details">Details: </label>
+  <textarea id="details" name="details" placeholder="description" style="height:200px"></textarea>
+
+  <label for="where">Where: </label>
+  <input type="text" id="where" name="where" placeholder="where in Azeroth">
+
+  <label for="date">Date: </label>
+  <input type="text" id="date" name="date" placeholder="date">
+
+  <label for="time">Time: </label>
+  <input type="text" id="time" name="time" placeholder="time (EST)">
+
+  <input type="submit" value="Create New Connection">
+
+</form>
